@@ -17,3 +17,5 @@ TCP port: 1234
 Server HTTP ritorna i dati in formato HTML
 Server TCP ritorna i dati in formato JSON
 Client grafico si connette con Server TCP
+
+HTTP url: 172.16.150.141:8000/?cmd=
