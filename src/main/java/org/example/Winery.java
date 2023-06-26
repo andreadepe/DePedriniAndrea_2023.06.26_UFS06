@@ -62,23 +62,10 @@ public class Winery {
     }
 
 
-    /*public Car getMostExpensive() {
-        List<Car> carList = new ArrayList<>(vineList);
-        carList.sort((o1, o2) -> {
-            if (o1.getPrice()<o2.getPrice())
-                return 1;
-            if (o1.getPrice()>o2.getPrice())
-                return -1;
-            return 0;
-        });
-        return carList.get(0);
+    public static void buildList(){
+        wineList.add(new Wine(1,"Vino bianco", 23.34, "White"));
+        wineList.add(new Wine(3,"Vino rosè", 34.65, "Rose"));
+        wineList.add(new Wine(100,"Vino rosso", 12.65, "Red"));
+        wineList.add(new Wine(7,"Altro vino", 49, "White"));
     }
-
-    public List<Car> getSortedList() {
-        List<Car> carList = new ArrayList<>(cars);
-        carList.sort((o1, o2) -> {
-            return o1.getBrand().compareTo(o2.getBrand());
-        });
-        return carList;
-    }*/
 }

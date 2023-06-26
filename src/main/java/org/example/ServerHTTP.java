@@ -13,6 +13,7 @@ public class ServerHTTP
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Winery.buildList();
         //Oracle code was: server.createContext("/applications/myapp", new MyHandler());
         server.createContext("/", new MyHandler());
         server.setExecutor(null); // creates a default executor

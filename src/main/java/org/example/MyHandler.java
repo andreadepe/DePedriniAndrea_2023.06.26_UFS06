@@ -27,10 +27,10 @@ public class MyHandler implements HttpHandler {
         String response = null;
         try {
             response = process(uri.toString());
-            exchange.sendResponseHeaders(200, response.length());
+            exchange.sendResponseHeaders(200, response.getBytes().length);
         } catch (CommandException e) {
             response = "Error 400: Bad request";
-            exchange.sendResponseHeaders(400, response.length());
+            exchange.sendResponseHeaders(400, response.getBytes().length);
         }
 
 
@@ -89,7 +89,7 @@ public class MyHandler implements HttpHandler {
                 "<html lang=en>\n" +
                 "<head>\n" +
                 "<meta charset=utf-8>\n" +
-                "<title> " + "Wine" + "</title>\n" +
+                "<title>" + "Wine" + "</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "<table>\n" +
@@ -119,7 +119,7 @@ public class MyHandler implements HttpHandler {
                 "<html lang=en>\n" +
                 "<head>\n" +
                 "<meta charset=utf-8>\n" +
-                "<title> " + "Wines" + "</title>\n" +
+                "<title>" + "Wines" + "</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "<table>\n" +

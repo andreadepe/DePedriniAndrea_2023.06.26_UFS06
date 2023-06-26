@@ -10,7 +10,7 @@ public class Wine {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.type = type;
+        this.setType(type);
     }
 
     public int getId() {
@@ -42,6 +42,6 @@ public class Wine {
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.type = type.toLowerCase();
     }
 }
