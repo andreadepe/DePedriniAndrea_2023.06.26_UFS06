@@ -3,8 +3,7 @@ De Pedrini Andrea
 Esame UFS06 - 26/06/2023
 
 Traccia D
-Un server HTTP ha una lista di vini che puo' inviare
-al client che invii i seguenti possibile comandi TESTUALI:
+Un server HTTP ha una lista di vini che puo' inviare al client che invii i seguenti possibile comandi TESTUALI:
 
 - "red"
 - "white"
@@ -13,3 +12,7 @@ al client che invii i seguenti possibile comandi TESTUALI:
 
 HTTP port: 8000
 TCP port: 1234
+
+Server HTTP ritorna i dati in formato HTML
+Server TCP ritorna i dati in formato JSON
+Client grafico si connette con Server TCP
