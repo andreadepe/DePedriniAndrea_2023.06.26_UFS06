@@ -28,7 +28,7 @@ public class MyHttpHandler implements HttpHandler {
         try {
             response = process(uri.toString());
             exchange.sendResponseHeaders(200, response.getBytes().length);
-        } catch (CommandException e) {
+        } catch (Exception e) {
             response = "Error 400: Bad request";
             exchange.sendResponseHeaders(400, response.getBytes().length);
         }
