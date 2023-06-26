@@ -15,7 +15,7 @@ public class ServerHTTP
         }
         Winery.buildList();
         //Oracle code was: server.createContext("/applications/myapp", new MyHandler());
-        server.createContext("/", new MyHandler());
+        server.createContext("/", new MyHttpHandler());
         server.setExecutor(null); // creates a default executor
         server.start();
     }

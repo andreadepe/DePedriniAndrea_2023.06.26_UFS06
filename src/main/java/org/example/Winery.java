@@ -64,7 +64,7 @@ public class Winery {
 
     public static void buildList(){
         wineList.add(new Wine(1,"Vino bianco", 23.34, "White"));
-        wineList.add(new Wine(3,"Vino rosè", 34.65, "Rose"));
+        wineList.add(new Wine(3,"Vino rose", 34.65, "Rose"));
         wineList.add(new Wine(100,"Vino rosso", 12.65, "Red"));
         wineList.add(new Wine(7,"Altro vino", 49, "White"));
     }

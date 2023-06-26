@@ -8,7 +8,7 @@ import java.io.*;
 import java.net.URI;
 import java.util.List;
 
-public class MyHandler implements HttpHandler {
+public class MyHttpHandler implements HttpHandler {
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
