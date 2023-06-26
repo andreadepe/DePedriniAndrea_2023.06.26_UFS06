@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bianco",
+    "price": 23.34,
+    "type": "white"
+  },
+  {
+    "id": 3,
+    "name": "Rose",
+    "price": 34.65,
+    "type": "rose"
+  },
+  {
+    "id": 100,
+    "name": "Rosso",
+    "price": 12.65,
+    "type": "red"
+  },
+  {
+    "id": 7,
+    "name": "Altro",
+    "price": 49,
+    "type": "white"
+  }
+]

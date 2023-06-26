@@ -24,6 +24,12 @@ public class Winery {
         wineList.add(wine);
     }
 
+    void add(Wine[] wines){
+        for(int i=0; i<wines.length; i++){
+            wineList.add(wines[i]);
+        }
+    }
+
     void remove(Wine wine){
         wineList.remove(wine);
     }
